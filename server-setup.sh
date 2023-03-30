@@ -19,7 +19,6 @@ git clone https://$GITHUB_TOKEN@github.com/clover-coop/clover-app.git && \
     # `frontend/.env`
 
     # Note: Flutter may fail to install (gets corrupted) without >1 GB RAM.
-    # Install python and node dependencies
 apt-get -y install libssl-dev && \
     pip3 install -r ./requirements.txt && \
     snap install flutter --classic && \

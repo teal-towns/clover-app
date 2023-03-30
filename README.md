@@ -1,4 +1,4 @@
-# seed_app
+# clover_app
 
 Python (with sockets) + MongoDB + Flutter
 
