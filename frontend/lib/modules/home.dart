@@ -20,7 +20,7 @@ class _HomeComponentState extends State<HomeComponent> {
     return AppScaffoldComponent(
       body: ListView(
         children: [
-          Text('Home'),
+          Text('Home Test'),
         ]
       )
     );
