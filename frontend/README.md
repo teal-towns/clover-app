@@ -1,4 +1,4 @@
-# seed_app
+# clover_app
 
 A new Flutter project.
 

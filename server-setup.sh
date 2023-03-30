@@ -8,8 +8,8 @@ cd /var && mkdir www && cd /var/www && \
     # Install python3 and pip3
     apt-get -y update && apt-get -y upgrade && python3 -V && apt -y install python3-pip && \
     # Clone repo
-git clone https://$GITHUB_TOKEN@github.com/lukemadera/seed-app.git && \
-    cd seed-app
+git clone https://$GITHUB_TOKEN@github.com/clover-coop/clover-app.git && \
+    cd clover-app
 
 # Add SSL cert. https://certbot.eff.org/lets-encrypt/ubuntubionic-other
 
@@ -25,7 +25,7 @@ apt-get -y install libssl-dev && \
     snap install flutter --classic && \
     flutter channel beta && flutter upgrade && flutter config --enable-web && \
     cd frontend && flutter build web && cd ../ && \
-    cp systemd_web_server.service /etc/systemd/system/systemd_web_server.service && \
+    cp systemd_web_server_clover_app.service /etc/systemd/system/systemd_web_server_clover_app.service && \
     systemctl daemon-reload && \
-    systemctl enable systemd_web_server.service && \
-    systemctl restart systemd_web_server.service
+    systemctl enable systemd_web_server_clover_app.service && \
+    systemctl restart systemd_web_server_clover_app.service

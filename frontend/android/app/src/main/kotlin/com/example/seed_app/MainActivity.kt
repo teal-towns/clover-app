@@ -1,4 +1,4 @@
-package com.example.seed_app
+package earth.clovercoop.clover_app
 
 import io.flutter.embedding.android.FlutterActivity
 

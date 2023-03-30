@@ -9,10 +9,7 @@ Python (with sockets) + MongoDB + Flutter
 
 For (Ubuntu) script, see `server-setup.sh`
 
-- install imagemagick - http://docs.wand-py.org/en/0.5.9/
-    - Mac: `brew install imagemagick`
-    - Ubuntu: `apt-get install libmagickwand-dev`
-- `pip3 install -r ./requirements.txt`
+- `pip install -r ./requirements.txt`
 - set up configs (these vary per environment and contains access keys so are NOT checked into version control)
   - `cp config.sample.yml config.yml` then edit `config.yml` as necessary.
   - `cp configloggly.sample.conf config-loggly.conf` and edit `config-loggly.conf` as needed.
@@ -29,7 +26,7 @@ For (Ubuntu) script, see `server-setup.sh`
 ### SSL (HTTPS) with letsencrypt
 
 - Run on server without SSL (set config.yml and frontend/.env to http only)
-- `certbot certonly --webroot` (just use /var/www/seed_app for the webroot, though not sure if this matters?)
+- `certbot certonly --webroot` (just use /var/www/clover_app for the webroot, though not sure if this matters?)
 - Update config.yml and frontend.env to use https (and add the path to the generated SSL files)
 
 
@@ -66,10 +63,10 @@ Create accounts and add api keys in configs for each:
 
 ## Updates (should be done via CI)
 
-`git pull origin master`
+`git pull origin main`
 `pip3 install -r ./requirements.txt` (only necessary if updated requirements.txt)
 `cd frontend && flutter build web && cd ../`
-`systemctl restart systemd_web_server.service`
+`systemctl restart systemd_web_server_clover_app.service`
 
 
 ### Versions

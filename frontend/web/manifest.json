@@ -1,11 +1,11 @@
 {
-    "name": "seed_app",
-    "short_name": "seed_app",
+    "name": "clover_app",
+    "short_name": "clover_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Clover App",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

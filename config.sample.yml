@@ -21,9 +21,9 @@ web_server:
     base_server: https://YOUR-DOMAIN.com
   cors_urls:
     - http://127.0.0.1:8081
-    - http://127.0.0.1:3020
+    - http://127.0.0.1:3026
     - http://localhost:8081
-    - http://localhost:3020
+    - http://localhost:3026
     - http://localhost:8082
     - http://127.0.0.1:8082
 mongodb:
