@@ -11,8 +11,6 @@ cd /var && mkdir www && cd /var/www && \
 git clone https://$GITHUB_TOKEN@github.com/clover-coop/clover-app.git && \
     cd clover-app
 
-# Add SSL cert. https://certbot.eff.org/lets-encrypt/ubuntubionic-other
-
 # Update configs and copy prod version to server.
     # `config.yml` - e.g. set port to 443 (for SSL), enable SSL, add paths to SSL cert files.
     # `config-loggly.conf`
@@ -28,3 +26,5 @@ apt-get -y install libssl-dev && \
     systemctl daemon-reload && \
     systemctl enable systemd_web_server_clover_app.service && \
     systemctl restart systemd_web_server_clover_app.service
+
+# Add SSL cert. https://certbot.eff.org/instructions

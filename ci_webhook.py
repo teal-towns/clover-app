@@ -11,7 +11,7 @@ def Restart(doRestart = 1):
       thread.start()
 
 def RestartIt():
-    os.system("cd /var/www/clover_app && \
+    os.system("cd /var/www/clover-app && \
         git checkout . && git pull origin main && \
         pip3 install -r ./requirements.txt && \
         flutter upgrade && \

@@ -26,7 +26,7 @@ For (Ubuntu) script, see `server-setup.sh`
 ### SSL (HTTPS) with letsencrypt
 
 - Run on server without SSL (set config.yml and frontend/.env to http only)
-- `certbot certonly --webroot` (just use /var/www/clover_app for the webroot, though not sure if this matters?)
+- `certbot certonly --webroot` (just use /var/www/clover-app for the webroot, though not sure if this matters?)
 - Update config.yml and frontend.env to use https (and add the path to the generated SSL files)
 
 

@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run:
           name: Deploy
-          command: ssh -oStrictHostKeyChecking=no root@clovercoop.earth 'cd /var/www/clover_app && git checkout . && git pull origin main && pip3 install -r ./requirements.txt && flutter upgrade && cd frontend && flutter build web && systemctl restart systemd_web_server_clover_app.service'
+          command: ssh -oStrictHostKeyChecking=no root@clovercoop.earth 'cd /var/www/clover-app && git checkout . && git pull origin main && pip3 install -r ./requirements.txt && flutter upgrade && cd frontend && flutter build web && systemctl restart systemd_web_server_clover_app.service'
 workflows:
   test_app:
     when: << pipeline.parameters.run >>

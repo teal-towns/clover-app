@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/www/clover_app && \
+cd /var/www/clover-app && \
     git pull origin main && \
     pip3 install -r ./requirements.txt && \
     cd frontend && flutter build web && cd ../ && \
