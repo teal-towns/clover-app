@@ -28,3 +28,6 @@ apt-get -y install libssl-dev && \
     systemctl restart systemd_web_server_clover_app.service
 
 # Add SSL cert. https://certbot.eff.org/instructions
+# 1. Disable https in config.yml and frontend/.env then rebuild (frontend & restart server)
+# 2. Run certbot
+# 3. Re-enable https (& update SSL paths in config.yml) then rebuild frontend & restart server.
